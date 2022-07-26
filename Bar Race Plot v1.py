@@ -30,8 +30,8 @@ st.title("Gráfico de barras dinámico Finca GT")
 #values = pd.read_excel(BytesIO(res.content), usecols=None)
 #print(values)
 
-df = pd.read_excel("C://Users/marco.gomez/Downloads/Histórico Cierres por Agencia v1.xlsx")
-#df = pd.read_excel("Histórico Cierres por Agencia v1.xlsx")
+#df = pd.read_excel("C://Users/marco.gomez/Downloads/Histórico Cierres por Agencia v1.xlsx")
+df = pd.read_excel("Histórico Cierres por Agencia v1.xlsx")
 df = df[df['Año'] >= 2017]
 print(df.info())
 df_str = df.select_dtypes(include = ['object'])
